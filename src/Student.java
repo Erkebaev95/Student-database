@@ -31,12 +31,14 @@ public class Student {
     }
 
     // Generate an ID
+    // Генерировать ID
     private void setStudentID() {
         id++;
         this.studentID = gradeYear + "" + id;
     }
 
     // Enroll courses
+    // Записаться на курсы
     public void enroll() {
         do {
             System.out.print("Enter course to enroll (Q to quite): ");
@@ -52,11 +54,13 @@ public class Student {
     }
 
     // View balance
+    // Просмотр баланса
     public void viewBalance() {
         System.out.println("\nYour balance is: $" + tuitionBalance);
     }
 
     // Pay tuition
+    // Платить за обучение
     public void payTuition() {
         viewBalance();
         System.out.print("Enter your payment: $");
@@ -68,6 +72,7 @@ public class Student {
     }
 
     // Show status
+    // Показать статус
     public String toString() {
         return "Name: " + firstName + " " + lastName +
                 "\nGrade Level: " + gradeYear +
